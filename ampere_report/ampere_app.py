@@ -30,7 +30,11 @@ AVG_LINE_COLOR = "#EB134B"
 CURRENCY_SYMBOL = "₣"
 
 # Must be the first Streamlit command.
-st.set_page_config(page_title="Ampere Retail Performance", layout="wide")
+st.set_page_config(
+    page_title="Ampere Retail Performance",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
 
 def format_currency(value: Optional[float], decimal: int = 2) -> str:
@@ -332,6 +336,10 @@ def _build_icon_link_html() -> str:
         "LinkedIn": (
             "images/LinkedIn_icon.png",
             "https://www.linkedin.com/in/antonminiazev/",
+        ),
+        "Docs": (
+            "images/docs_icon.png",
+            "https://github.com/AntonMiniazev/bohr_project/tree/main/docs",
         ),
     }
     tags: List[str] = []
