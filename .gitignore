@@ -1,0 +1,23 @@
+# =========================
+# Virtual environments / IDE
+# =========================
+.venv/
+.vscode/
+AGENTS.md
+.python-version
+/main.py
+
+# =========================
+# Secrets / Config
+# =========================
+data_source/.env
+*.yaml.dec
+*.dec.yaml
+secret_enc/
+.secret_enc/
+api_proxy/.env
+__pycache__/
+*.pyc
+/streamlit_app
+*.egg-info/
+.env
